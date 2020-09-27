@@ -1,0 +1,159 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!--  全局初始化参数-->
+  <context-param>
+    <param-name>username</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>123</param-value>
+  </context-param>
+<!--*************************-->
+  <!--ServletDemo2-->
+  <servlet>
+    <servlet-name>ServlerDemo2</servlet-name>
+    <servlet-class>ServletDemo2</servlet-class>
+<!--    配置启动时加载-->
+<!--    传一个正整数，整数越小，他的启动优先级越小-->
+<!--    在Tomcat服务器，有一个默认的Servlet,他的启动优先级为1，所配置的优先级不能高于他-->
+<!--    <load-on-startup>2</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServlerDemo2</servlet-name>
+    <url-pattern>/ServletDemo2</url-pattern>
+  </servlet-mapping>
+
+  <!--ServletDemo3-->
+  <servlet>
+    <servlet-name>ServlerDemo3</servlet-name>
+    <servlet-class>ServletDemo3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServlerDemo3</servlet-name>
+<!--    完全路径匹配-->
+    <url-pattern>/ServletDemo3</url-pattern>
+<!--    目录匹配-->
+<!--    /*：代表任意字符-->
+<!--    <url-pattern>/*</url-pattern>-->
+<!--    扩展名匹配-->
+<!--    <url-pattern>*.aaa</url-pattern>-->
+  </servlet-mapping>
+
+  <!--ServletDemo4-->
+  <servlet>
+    <servlet-name>ServletDemo4</servlet-name>
+    <servlet-class>ServletDemo4</servlet-class>
+<!--    配置Servlet初始化参数-->
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>123</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ServletDemo4</servlet-name>
+    <url-pattern>/ServletDemo4</url-pattern>
+  </servlet-mapping>
+
+<!--ServletDemo5-->
+  <servlet>
+    <servlet-name>ServletDemo5</servlet-name>
+    <servlet-class>ServletDemo5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo5</servlet-name>
+    <url-pattern>/ServletDemo5</url-pattern>
+  </servlet-mapping>
+
+  <!--ServletDemo6-->
+  <servlet>
+    <servlet-name>ServletDemo6</servlet-name>
+    <servlet-class>ServletDemo6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo6</servlet-name>
+    <url-pattern>/ServletDemo6</url-pattern>
+  </servlet-mapping>
+
+  <!--ServletDemo7-->
+  <servlet>
+    <servlet-name>ServletDemo7</servlet-name>
+    <servlet-class>ServletDemo7</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo7</servlet-name>
+    <url-pattern>/ServletDemo7</url-pattern>
+  </servlet-mapping>
+
+  <!--ServletTestDemo7-->
+  <servlet>
+    <servlet-name>ServletTestDemo7</servlet-name>
+    <servlet-class>ServletTestDemo7</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletTestDemo7</servlet-name>
+    <url-pattern>/ServletTestDemo7</url-pattern>
+  </servlet-mapping>
+
+  <!--ResponseDemo1-->
+  <servlet>
+    <servlet-name>ResponseDemo1</servlet-name>
+    <servlet-class>ResponseDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo1</servlet-name>
+    <url-pattern>/ResponseDemo1</url-pattern>
+  </servlet-mapping>
+
+  <!--ResponseDemo2-->
+  <servlet>
+    <servlet-name>ResponseDemo2</servlet-name>
+    <servlet-class>ResponseDemo2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo2</servlet-name>
+    <url-pattern>/ResponseDemo2</url-pattern>
+  </servlet-mapping>
+
+  <!--RequestDemo1-->
+  <servlet>
+    <servlet-name>RequestDemo1</servlet-name>
+    <servlet-class>RequestDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestDemo1</servlet-name>
+    <url-pattern>/RequestDemo1</url-pattern>
+  </servlet-mapping>
+
+  <!--RequestDemo3-->
+  <servlet>
+    <servlet-name>RequestDemo3</servlet-name>
+    <servlet-class>RequestDemo3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestDemo3</servlet-name>
+    <url-pattern>/RequestDemo3</url-pattern>
+  </servlet-mapping>
+
+  <!--CookieDemo1-->
+  <servlet>
+    <servlet-name>CookieDemo1</servlet-name>
+    <servlet-class>CookieDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieDemo1</servlet-name>
+    <url-pattern>/CookieDemo1</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
